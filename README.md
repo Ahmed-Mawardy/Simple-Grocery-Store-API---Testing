@@ -128,6 +128,13 @@ pm.test("Response has a valid Schema", function () {
  ![Picture5](https://github.com/nourrrhan/GroceryAPI-Testing/assets/70220868/3e281cc6-58f0-4ce3-80a3-02032322f513)
 
 - Download `newman-reports` folder, and open the HTML file to see the report.
+## Contact
+
+If you have any questions, suggestions, or encounter any issues regarding this project, please don't hesitate to get in touch. Your feedback and contributions are greatly appreciated.
+- **Email**: ahmedmawrdy20@gmail.com
+- **linkedin**: https://www.linkedin.com/in/ahmed-mawardy-81757a153/
+
+You're also welcome to open an issue in this repository or contact me directly. Thank you for your interest and support!
 
 
 
