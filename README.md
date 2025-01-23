@@ -18,7 +18,7 @@ The goal of this project is to test various endpoints of the Simple Grocery Stor
     *   **Response body** includes the correct data.
     *   **Returned data** is consistent and accurate.
 *   Ensuring proper **authentication** and **authorization** mechanisms.
-*   Verifying the API's **response schema** against predefined standards.\
+*   Verifying the API's **response schema** against predefined standards.
   ##  Technologies Used
 <a href="https://www.postman.com/"><img src="https://user-images.githubusercontent.com/25181517/192109061-e138ca71-337c-4019-8d42-4792fdaa7128.png" title="POSTMAN" alt="POSTMAN" width="40" height="40"/></a>
 
