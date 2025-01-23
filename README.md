@@ -3,6 +3,11 @@ This API allows you to place a grocery order which will be ready for pick-up in 
 ### API used
   Here you can find the documentation for the API:
   [Simple Grocery Store API](https://github.com/vdespa/Postman-Complete-Guide-API-Testing/blob/main/simple-grocery-store-api.md)
+## Table of contents
+* [Description](#Project-Description)
+* [Requests](#Requests-Sent-to-the-API)
+* [Examples of Test Cases](#Test-Cases-Examples)
+* [How to run in Github](#How-to-run-in-Github)  
 ## Project Description
 The goal of this project is to test various endpoints of the Simple Grocery Store API by:
 *   Sending requests to different API endpoints.
