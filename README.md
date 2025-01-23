@@ -5,6 +5,7 @@ This API allows you to place a grocery order which will be ready for pick-up in 
   [Simple Grocery Store API](https://github.com/vdespa/Postman-Complete-Guide-API-Testing/blob/main/simple-grocery-store-api.md)
 ## Table of contents
 * [Description](#Project-Description)
+* [Prerequisites to run locally](#Prerequisites-to-run-locally)
 * [Requests](#Requests-Sent-to-the-API)
 * [Examples of Test Cases](#Test-Cases-Examples)
 * [How to run in Github](#How-to-run-in-Github)  
@@ -22,7 +23,7 @@ The goal of this project is to test various endpoints of the Simple Grocery Stor
 <a href="https://www.postman.com/"><img src="https://user-images.githubusercontent.com/25181517/192109061-e138ca71-337c-4019-8d42-4792fdaa7128.png" title="POSTMAN" alt="POSTMAN" width="40" height="40"/></a>
 
 ![Newman](https://img.shields.io/badge/Newman-Command_Line-brightgreen)
-### Prerequisites to run locally
+## Prerequisites to run locally
   - Node.js and npm installed
   - Postman installed
   - Newman installed globally (`npm install -g newman`)
