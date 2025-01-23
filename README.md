@@ -23,23 +23,22 @@ The goal of this project is to test various endpoints of the Simple Grocery Stor
   - Newman installed globally (`npm install -g newman`)
   - Download `collection.json` file, and import to Postman.
 ## Requests Sent to the API
-  This Postman collection includes the following requests to all endpoints defined in the API documentation:
-    + `GET /status` - Returns the status of the API.
-    + `POST /api-clients` - Registers a new clint to the API, and try to register a client that already registered.
-    + `POST /carts` - Creates a new cart.
-    + `GET /products` - Returnes a list of products, returns specific number of products, returns products from a specific category, and returnes only available products.
-    + `POST /carts/:cartId/items` - Add an item to cart.
-    + `GET /carts/:cartId` - Returns a cart, and try to return a cart with an invalid ID.
-    + `GET /carts/:cartId/items` - Returnes a cart items, and try to return items of cart with invalid ID.
-    + `PATCH /carts/:cartId/items/:itemId` - Modifies a quantity of specific item in the cart.
-    + `PUT /carts/:cartId/items/:itemId` - Replaces an item in the cart with another product, and try to replace an item with invalid product ID.
-    + `DEL /carts/:cartId/items/:itemId` - Removes an item from the cart.
-    + `POST /orders` - Creates a new order by the registered client, and try to create an order with unauthorized user.
-    + `GET /orders` - Returnes a list of orders created by the registered client, and try to retrieve orders with an unauthorized user.
-    + `GET /orders/:orderId` - Returns a details of a specific order created by the user, and try to retrieve specific order with an unauthorized user.
-    + `PATCH /orders/:orderId` - Updates order details that created by a registered user, try to update specific order with an unauthorized user, and try to update order with invalid ID.
-    + `DEL /orders/:orderId` - Removes a specific order created by registered user, try to remove specific order with an unauthorized user, and try to remove order with invalid ID.
-    ## Test Cases Examples
++ `GET /status` - Returns the status of the API.
++ `POST /api-clients` - Registers a new clint to the API, and try to register a client that already registered.
++ `POST /carts` - Creates a new cart.
++ `GET /products` - Returnes a list of products, returns specific number of products, returns products from a specific category, and returnes only available products.
++ `POST /carts/:cartId/items` - Add an item to cart.
++ `GET /carts/:cartId` - Returns a cart, and try to return a cart with an invalid ID.
++ `GET /carts/:cartId/items` - Returnes a cart items, and try to return items of cart with invalid ID.
++ `PATCH /carts/:cartId/items/:itemId` - Modifies a quantity of specific item in the cart.
++ `PUT /carts/:cartId/items/:itemId` - Replaces an item in the cart with another product, and try to replace an item with invalid product ID.
++ `DEL /carts/:cartId/items/:itemId` - Removes an item from the cart.
++ `POST /orders` - Creates a new order by the registered client, and try to create an order with unauthorized user.
++ `GET /orders` - Returnes a list of orders created by the registered client, and try to retrieve orders with an unauthorized user.
++ `GET /orders/:orderId` - Returns a details of a specific order created by the user, and try to retrieve specific order with an unauthorized user.
++ `PATCH /orders/:orderId` - Updates order details that created by a registered user, try to update specific order with an unauthorized user, and try to update order with invalid ID.
++ `DEL /orders/:orderId` - Removes a specific order created by registered user, try to remove specific order with an unauthorized user, and try to remove order with invalid ID.
+## Test Cases Examples
 + Check Status Code (200 OK, 401 Unauthorized, 404 Not found, etc.):
 ```
 pm.test("Check that status code is 404", function () {
@@ -105,4 +104,26 @@ pm.test("Response has a valid Schema", function () {
     pm.response.to.have.jsonSchema(schema);
 });
 ```
+## How to run in Github
+- Go to repository page.
+- Click on `Actions` tap.
+ ![Picture1](https://github.com/nourrrhan/GroceryAPI-Testing/assets/70220868/94697b91-dbc0-4d70-8457-a103989daad5)
 
+- From the `Actions` side in the left, click on `Postman-Newman-Collection`.
+ ![Picture2](https://github.com/nourrrhan/GroceryAPI-Testing/assets/70220868/772ca450-952c-4742-b217-2191578851a5)
+
+- Click on `Run Workflow`.
+ ![Picture3](https://github.com/nourrrhan/GroceryAPI-Testing/assets/70220868/8cbfd101-0167-4e6e-a71c-116bba8ec943)
+
+- Wait untill the run starts, then click on the latest run, and wait untill it finishes.
+ ![Picture4](https://github.com/nourrrhan/GroceryAPI-Testing/assets/70220868/eb40ebec-bbfa-4857-b5a8-80c608286f26)
+
+- Scroll down to the `Artifacts` section.
+ ![Picture5](https://github.com/nourrrhan/GroceryAPI-Testing/assets/70220868/3e281cc6-58f0-4ce3-80a3-02032322f513)
+
+- Download `newman-reports` folder, and open the HTML file to see the report.
+
+
+
+
+  
